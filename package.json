@@ -41,7 +41,7 @@
     "sequelize": "^6.33.0",
     "sequelize-auto": "^0.8.8",
     "styled-components": "^6.0.9",
-    "swiper": "^8.4.2",
+    "swiper": "^11.0.3",
     "uuid": "^8.3.2",
     "uuid-validate": "0.0.3",
     "validator": "^13.6.0"

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation } from "swiper/modules";
 import NavbarTwo from "../../../components/_App/NavbarTwo";
 import DashboardNavbar from "../../../components/Dashboard/DashboardNavbar";
 

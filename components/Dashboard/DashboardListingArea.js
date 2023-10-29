@@ -9,7 +9,7 @@ import baseUrl from "../../utils/baseUrl";
 import ActiveListingPagination from "../activeListing/ActiveListingPagination";
 import PendingListingPagination from "../pendingListing/PendingListingPagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation } from "swiper/modules";
 
 // components
 import UpdateListing from "./UpdateListing";
