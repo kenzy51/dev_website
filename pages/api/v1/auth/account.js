@@ -2,7 +2,6 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import isLength from 'validator/lib/isLength';
 import { users as User } from '../../../../models';
-import { agents as Agent } from '../../../../models';
 
 export default async (req, res) => {
   if (!('authorization' in req.headers)) {
@@ -146,7 +145,7 @@ const handleGetRequest = async (req, res) => {
         res.status(404).send('User not found');
       }
     }else{
-      const agent = await Agent.findOne({
+      const agent = await User.findOne({
         attributes: {
           exclude: ['password'],
         },
