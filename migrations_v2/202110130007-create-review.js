@@ -1,0 +1,35 @@
+// migrations/202110130007-create-review.js
+module.exports = {
+    up: async (queryInterface, Sequelize) => {
+      await queryInterface.createTable('Reviews', {
+        id: {
+          allowNull: false,
+          primaryKey: true,
+          type: Sequelize.UUID,
+          defaultValue: Sequelize.UUIDV4
+        },
+        userId: {
+          type: Sequelize.UUID,
+          references: { model: 'Users', key: 'id' },
+          onDelete: 'CASCADE',
+          onUpdate: 'CASCADE',
+          allowNull: false
+        },
+        manufacturerId: {
+          type: Sequelize.UUID,
+          references: { model: 'Manufacturers', key: 'id' },
+          onDelete: 'CASCADE',
+          onUpdate: 'CASCADE',
+          allowNull: false
+        },
+        rating: { type: Sequelize.INTEGER },
+        comment: { type: Sequelize.TEXT },
+        createdAt: { allowNull: false, type: Sequelize.DATE },
+        updatedAt: { allowNull: false, type: Sequelize.DATE }
+      });
+    },
+    down: async (queryInterface, Sequelize) => {
+      await queryInterface.dropTable('Reviews');
+    }
+  };
+  
