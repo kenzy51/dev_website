@@ -1,0 +1,30 @@
+{
+  "development_local": {
+    "username": "cliu56",
+    "password": "root",
+    "database": "indice_dev_2",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "development": {
+    "username": "tbidehhq",
+    "password": "KyiLbhN0F3jzeHclnj5ijaBt8qIinfoB",
+    "database": "tbidehhq",
+    "host": "dumbo.db.elephantsql.com",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "salak",
+    "password": "shrt345&3hsg12sA",
+    "database": "indice_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
